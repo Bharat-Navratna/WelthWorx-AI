@@ -17,7 +17,7 @@ const Header = async () => {
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
       <Link
         href="/"
-        className="relative inline-block mx-20 h-12 w-[200px] flex items-center justify-center logo-netflix-container"
+        className="relative inline-block mx-4 md:mx-20 h-12 w-full max-w-[200px] flex items-center justify-center logo-netflix-container"
       >
         {/* Light Mode Animated Logo */}
         <div className="dark:hidden">
