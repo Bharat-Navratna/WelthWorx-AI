@@ -17,17 +17,17 @@ const Header = async () => {
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
       <Link
         href="/"
-        className="relative inline-block mx-4 md:mx-20 h-12 w-full max-w-[200px] flex items-center justify-center logo-netflix-container"
+        className="relative inline-block mx-auto h-12 w-[150px] md:w-[200px] flex items-center justify-center logo-netflix-container"
       >
         {/* Light Mode Animated Logo */}
-        <div className="dark:hidden">
-          <span className="logo-initial">WW AI</span>
-          <span className="logo-final">WelthWorx AI</span>
+        <div className="dark:hidden w-full">
+          <span className="logo-initial block w-full text-sm md:text-base">WW AI</span>
+          <span className="logo-final block w-full text-sm md:text-base">WelthWorx AI</span>
         </div>
         {/* Dark Mode Animated Logo */}
-        <div className="hidden dark:block">
-          <span className="logo-initial-dark">WW AI</span>
-          <span className="logo-final-dark">WelthWorx AI</span>
+        <div className="hidden dark:block w-full">
+          <span className="logo-initial-dark block w-full text-sm md:text-base">WW AI</span>
+          <span className="logo-final-dark block w-full text-sm md:text-base">WelthWorx AI</span>
         </div>
       </Link>
 
