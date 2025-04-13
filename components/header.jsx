@@ -16,23 +16,38 @@ const Header = async () => {
         href="/"
         className="relative inline-block mx-20 h-12 w-[200px] flex items-center justify-center logo-netflix-container"
       >
-        {/* For smaller screens: show only WW AI */}
-        <div className="block lg:hidden w-full text-center">
+        {/* Small screens: only “WW AI” (no animation) */}
+        <div className="block md:hidden w-full text-center">
           <span className="logo-initial block w-full text-base font-bold">
             WW AI
           </span>
         </div>
-        
-        {/* For large screens: show the animated logo */}
-        <div className="hidden lg:block w-full text-center">
-          <span className="logo-initial block w-full text-base font-bold">
-            WW AI
-          </span>
-          <span className="logo-final block w-full text-base font-bold">
-            WelthWorx AI
-          </span>
+
+        {/* Medium+ screens: full animated logo */}
+        <div className="hidden md:block w-full text-center">
+          {/* Light Mode */}
+          <div className="dark:hidden relative w-full h-full">
+            <span className="logo-initial block w-full text-base font-bold">
+              WW AI
+            </span>
+            <span className="logo-final block w-full text-base font-bold">
+              WelthWorx AI
+            </span>
+          </div>
+
+          {/* Dark Mode */}
+          <div className="hidden dark:block relative w-full h-full">
+            <span className="logo-initial-dark block w-full text-base font-bold">
+              WW AI
+            </span>
+            <span className="logo-final-dark block w-full text-base font-bold">
+              WelthWorx AI
+            </span>
+          </div>
         </div>
       </Link>
+
+
 
 
         <div className="flex items-center space-x-4">
