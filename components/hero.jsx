@@ -50,16 +50,21 @@ const HeroSection = () => {
                    </Button>
                 </Link>
             </div>
-            <div className="hero-image-wrapper" >
-                <div ref={imageRef} className="hero-image" >
-                    <Image 
-                        src="/banner.jpeg"
-                        width={1280}
-                        height={720}
-                        alt="Dashboard Preview"
-                        className="rounded-lg shadow-2xl border mx-auto "
-                        priority
-                    /> 
+            <div className="hero-image-wrapper">
+                <div ref={imageRef} className="hero-image">
+                    <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    width={1280}
+                    height={720}
+                    className="rounded-lg shadow-2xl border mx-auto"
+                    >
+                    <source src="/3752538-hd_1920_1080_24fps.webm" type="video/webm" />
+                    <source src="/3752538-hd_1920_1080_24fps.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
         </div>              

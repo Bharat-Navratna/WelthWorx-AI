@@ -11,10 +11,10 @@ const Header = async () => {
 
   return (
     <div className="fixed top-0 w-full bg-background/80 backdrop-blur-md z-50 border-b border-border">
-      <nav className="container mx-auto px-4 py-4 flex flex-wrap items-center justify-between">
+      <nav className="container mx-auto px-2 py-4 flex flex-wrap items-center justify-between">
       <Link
         href="/"
-        className="relative inline-block mx-20 h-12 w-[200px] flex items-center justify-center logo-netflix-container"
+        className="relative inline-block h-12 w-[200px] flex items-center justify-center logo-netflix-container"
       >
         {/* Small screens: only “WW AI” (no animation) */}
         <div className="block md:hidden w-full text-center">
