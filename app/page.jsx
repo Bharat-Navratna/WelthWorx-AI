@@ -1,9 +1,14 @@
+'use client';
+
 import HeroSection from "@/components/hero"; 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { featuresData, howItWorksData, statsData, testimonialsData } from "@/data/landing";
 import Image from "next/image";
 import Link from "next/link";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -13,21 +18,57 @@ export default function Home() {
       <HeroSection/>
 
       {/* Stats Section */}
-      <section className="mt-5 py-20 bg-blue-50 dark:bg-blue-950/40">
+      <section className="mt-5 py-20 bg-blue-100 dark:bg-blue-950/40">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {statsData.map((item, index) => (
-              <div key={index} className="text-center">
-                {/* Change text color in dark mode if needed */}
-                <div className="text-4xl font-bold text-blue-600 dark:text-blue-100 mb-2">
-                  {item.value}
-                </div>
-                <div className="text-gray-600 dark:text-gray-300">
-                  {item.label}
-                </div>
-              </div>
-            ))}
-          </div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="grid grid-cols-2 md:grid-cols-4 gap-8"
+          >
+            {statsData.map((item, index) => {
+              const [ref, inView] = useInView({
+                triggerOnce: true,
+                threshold: 0.3,
+              });
+
+              return (
+                <motion.div
+                  key={index}
+                  ref={ref}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={inView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.6, delay: index * 0.3 }}
+                  className="text-center"
+                >
+                  <div className="text-4xl font-bold text-blue-600 dark:text-blue-100 mb-2">
+                    {inView ? (
+                      <>
+                        {item.prefix || ""}
+                        <CountUp
+                          end={item.value}
+                          duration={4}
+                          decimals={item.value % 1 !== 0 ? 1 : 0}
+                          separator=","
+                        />
+                        {item.suffix || ""}
+                      </>
+                    ) : (
+                      <>
+                        {item.prefix || ""}
+                        {item.value}
+                        {item.suffix || ""}
+                      </>
+                    )}
+                  </div>
+                  <div className="text-gray-600 dark:text-gray-300">
+                    {item.label}
+                  </div>
+                </motion.div>
+              );
+            })}
+          </motion.div>
         </div>
       </section>
 
@@ -56,7 +97,7 @@ export default function Home() {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-20 bg-blue-50 dark:bg-blue-950/40">
+      <section className="py-20 bg-blue-100 dark:bg-blue-950/40">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-16 text-gray-800 dark:text-gray-100">
             How It Works
@@ -117,13 +158,13 @@ export default function Home() {
       </section>
 
       {/* Call-to-Action Section */}
-      <section className="py-20 bg-blue-800 dark:bg-blue-950">
+      <section className="py-20 bg-blue-600 dark:bg-blue-950">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             Ready to Take Control of Your Finance?
           </h2>
           <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
-            Join thousands of users who are already managing their finances smarter with WelthWorx AI
+            Join thousands of users who are already managing their finances with the power of WelthWorx AI
           </p>
           <Link href="/dashboard">
             <Button
