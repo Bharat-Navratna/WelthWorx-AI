@@ -1,6 +1,6 @@
 import { SignedOut, SignedIn, SignInButton, UserButton } from '@clerk/nextjs';
 import Link from 'next/link';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { Button } from './ui/button';
 import { LayoutDashboard, PenBox } from 'lucide-react';
 import { checkUser } from '@/lib/checkUser';
@@ -11,41 +11,14 @@ const Header = async () => {
 
   return (
     <div className="fixed top-0 w-full bg-background/80 backdrop-blur-md z-50 border-b border-border">
-      <nav className="container mx-auto px-2 py-4 flex flex-wrap items-center justify-between">
-      <Link
-        href="/"
-        className="relative inline-block h-12 w-[200px] flex items-center justify-center logo-netflix-container"
-      >
-        {/* Small screens: only “WW AI” (no animation) */}
-        <div className="block md:hidden w-full text-center">
-          <span className="logo-initial block w-full text-base font-bold">
-            WW AI
-          </span>
-        </div>
-
-        {/* Medium+ screens: full animated logo */}
-        <div className="hidden md:block w-full text-center">
-          {/* Light Mode */}
-          <div className="dark:hidden relative w-full h-full">
-            <span className="logo-initial block w-full text-base font-bold">
-              WW AI
-            </span>
-            <span className="logo-final block w-full text-base font-bold">
-              WelthWorx AI
-            </span>
-          </div>
-
-          {/* Dark Mode */}
-          <div className="hidden dark:block relative w-full h-full">
-            <span className="logo-initial-dark block w-full text-base font-bold">
-              WW AI
-            </span>
-            <span className="logo-final-dark block w-full text-base font-bold">
-              WelthWorx AI
-            </span>
-          </div>
-        </div>
-      </Link>
+        <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
+    
+    {/* Brand */}
+    <Link href="/" className="flex items-center">
+      <span className="text-3xl font-bold leading-none select-none gradient-logo">
+        WelthWorx AI
+      </span>
+    </Link>
 
 
 

@@ -82,21 +82,20 @@ html {
   .gradient-title {
     @apply gradient font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text;
   }
-}
-
-.hero-image-wrapper {
-  perspective: 1000px;
+  .gradient-logo {
+    @apply gradient font-extrabold tracking-tighter text-transparent bg-clip-text;
+  }
 }
 
 .hero-image {
   transform: rotateX(20deg) scale(1);
   transition: transform 0.5s ease-out;
   will-change: transform;
-  filter: drop-shadow(0px 0px 20px rgb(185, 144, 240));
+  filter: drop-shadow(0px 0px 20px rgba(185, 144, 240, 0.8));
 }
 
 .dark .hero-image {
-  filter: drop-shadow(0px 0px 20px rgb(185, 144, 240));
+  filter: drop-shadow(0px 0px 20px rgba(185, 144, 240, 0.4));
 }
 
 .hero-image.scrolled {
@@ -122,159 +121,4 @@ html {
   animation: gradientMove 3s ease infinite;
 }
 
-/* Optional gradient border class */
-@keyframes gradientBorder {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.gradient-border {
-  background: linear-gradient(90deg, #6366f1, #f97316, #6366f1);
-  background-size: 200% 200%;
-  animation: gradientBorder 3s ease-in-out infinite;
-}
-
-@keyframes hueSpin {
-  to {
-    filter: hue-rotate(360deg);
-  }
-}
-
-.spin-filter {
-  filter: hue-rotate(0deg);
-  animation: hueSpin 2s linear infinite;
-}
-
-/* 1) Base container for the Netflix style logo */
-.logo-netflix-container {
-  position: relative;
-  display: inline-block;
-  width: auto;
-  height: auto;
-}
-
-/*-------------------------------------------------------------------
-  COMMON LOGO STYLING (for both light and dark mode)
----------------------------------------------------------------------*/
-.logo-initial,
-.logo-final,
-.logo-initial-dark,
-.logo-final-dark {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  /* Center the element */
-  transform: translate(-50%, -50%);
-  font-size: 1.8rem;
-  font-weight: 700;
-  user-select: none;
-  white-space: nowrap;
-  /* Outline style: transparent fill and stroked outline */
-  color: transparent;
-  -webkit-text-stroke: 1.8px #315bce;
-  letter-spacing: 0.06em;
-}
-
-/*-------------------------------------------------------------------
-  For Medium & Larger Screens (min-width: 768px) -- Full Animated Logo
----------------------------------------------------------------------*/
-
-/* The initial "WW AI" remains always visible on medium & larger screens */
-@media (min-width: 768px) {
-  .logo-initial,
-  .logo-initial-dark {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-  }
-  
-  /* The extra text ("WelthWorx AI") is shown and animated */
-  .logo-final {
-    display: block;
-    animation: finalAppear 2s forwards;
-    animation-delay: 2s;
-  }
-  
-  @keyframes finalAppear {
-    0% {
-      opacity: 0;
-      transform: translate(-50%, -50%) scale(0.8);
-    }
-    40% {
-      opacity: 1;
-      transform: translate(calc(-50% - 10px), -50%) scale(1);
-    }
-    100% {
-      opacity: 1;
-      transform: translate(calc(-50% - 10px), -50%) scale(1);
-    }
-  }
-  
-  .logo-final-dark {
-    display: block;
-    animation: finalAppearDark 2s forwards;
-    animation-delay: 2s;
-  }
-  
-  @keyframes finalAppearDark {
-    0% {
-      opacity: 0;
-      transform: translate(-50%, -50%) scale(0.8);
-    }
-    40% {
-      opacity: 1;
-      transform: translate(calc(-50% - 10px), -50%) scale(1);
-    }
-    100% {
-      opacity: 1;
-      transform: translate(calc(-50% - 10px), -50%) scale(1);
-    }
-  }
-}
-
-/* On small screens (max-width: 767px), no extra text or animations for .logo-final */
-@media (max-width: 767px) {
-  .logo-final,
-  .logo-final-dark {
-    display: none;
-  }
-  .logo-initial,
-  .logo-initial-dark {
-    animation: none;
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-  }
-}
-
-/* On medium & larger (min-width: 768px), show & animate .logo-final & .logo-final-dark */
-@media (min-width: 768px) {
-  .logo-final,
-  .logo-final-dark {
-    display: none;
-  }
-  .logo-initial,
-  .logo-initial-dark {
-    animation: none;
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(1);
-  }
-
-  .logo-final {
-    display: block;
-    animation: finalAppear 2s forwards;
-    animation-delay: 0s;
-  }
-  .logo-final-dark {
-    display: block;
-    animation: finalAppearDark 2s forwards;
-    animation-delay: 0s;
-  }
-  /* .logo-initial, .logo-initial-dark remain visible with or without animation. */
-}
 

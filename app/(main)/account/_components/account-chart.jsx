@@ -77,7 +77,7 @@ const AccountChart = ({ transactions }) => {
   }, [filteredData]);
 
   return (
-    <Card className="filter drop-shadow-[0_0_10px_rgb(185,144,240)]" >
+    <Card className="filter drop-shadow-[0_0_10px_rgba(185,144,240,0.5)]" >
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-7">
         <CardTitle className="text-base font-normal">Transaction Overview</CardTitle>
         <Select defaultValue={dateRange} onValueChange={setDateRange}>

@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <div className="mt-40">
+    <div className="mt-20 sm:mt-40">
       
       {/* Hero Section remains unchanged */}
       <HeroSection/>

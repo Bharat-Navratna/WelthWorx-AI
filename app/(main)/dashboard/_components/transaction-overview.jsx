@@ -80,7 +80,7 @@ const DashboardOverview = ({ accounts, transactions }) => {
     );
 
   return (
-    <div className='grid gap-4 md: grid-cols-2' >
+    <div className='grid gap-4 grid-cols-1 md:grid-cols-2' >
       <Card>
         <CardHeader className='flex flex-row items-center justify-between space-y-0 pb-4'>
             <CardTitle className='text-base font-normal'>
