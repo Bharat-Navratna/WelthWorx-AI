@@ -1,8 +1,30 @@
 # 💰 WelthWorx AI (AI-Powered Finance Platform)
 
+![Dashboard Preview](https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20164022.png)
+
 A full-stack, AI-enhanced personal finance app that helps users manage bank accounts, scan receipts using AI, track expenses, and receive insightful reports — all in one elegant dashboard.
 
 > Built as a portfolio project to showcase my front-end and full-stack development skills, with a focus on real-world functionality, clean UI/UX, and modern tooling with additional enhancements like Dark mode and responsive layout refinements. Targeted for entry-level, graduate, or internship roles.
+
+---
+
+## 📚 Table of Contents
+
+- [🚀 Features](#-features)
+- [🧩 Additional Enhancements](#-additional-enhancements)
+- [🌐 Live Demo](#-live-demo)
+- [🛠️ Tech Stack](#-tech-stack)
+- [🖼️ Screenshots](#-screenshots)
+- [📂 Project Structure](#-project-structure)
+- [🧑‍💻 Getting Started](#-getting-started)
+  - [Clone the Repository](#1-clone-the-repository)
+  - [Install Dependencies](#2-install-dependencies)
+  - [Set Up Environment Variables](#3-set-up-environment-variables)
+  - [Push Prisma Schema to the Database](#4-push-prisma-schema-to-the-database)
+  - [Start the Development Server](#5-start-the-development-server)
+- [🎯 My Learning Outcomes](#-my-learning-outcomes)
+- [📬 Contact](#-contact)
+- [⭐ Credits](#-credits)
 
 ---
 
