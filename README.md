@@ -43,40 +43,63 @@ A full-stack, AI-enhanced personal finance app that helps users manage bank acco
 - 📧 **Email Integration** – Notifications and reports via Resend
 
 <!-- Landscape Feature 1 -->
-<img src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20164110.png" 
-     style="margin-bottom: 25px;" />
+<div style="margin-bottom: 25px;">
+  <p><strong>1. Interactive Dashboard</strong></p>
+  <img 
+    src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20164110.png"
+  />
+</div>
 
 <!-- Landscape Feature 2 -->
-<img src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20164136.png" 
-     style="margin-bottom: 25px;" />
+<div style="margin-bottom: 25px;">
+  <p><strong>2. Transaction Overview</strong></p>
+  <img 
+    src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20164136.png"
+  />
+</div>
 
 <!-- Landscape Feature 3 -->
-<img src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20164154.png" 
-     style="margin-bottom: 25px;" />
+<div style="margin-bottom: 25px;">
+  <p><strong>3. AI Receipt Scanner</strong></p>
+  <img 
+    src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20164154.png"
+  />
+</div>
 
 <!-- Portrait Feature 4 -->
-<p align="center" style="margin-bottom: 25px;">
-  <img src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20184709.png" 
-       width="350" />
-</p>
+<div align="center" style="margin-bottom: 25px; text-align: center;">
+  <p><strong>4. Budget Notifications via Resend</strong></p>
+  <img 
+    src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20184709.png"
+    width="350"
+  />
+</div>
 
 <!-- Portrait Feature 5 -->
-<p align="center" style="margin-bottom: 25px;">
-  <img src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20184757.png" 
-       width="350" />
+<div align="center" style="margin-bottom: 25px; text-align: center;">
+  <p><strong>5. Monthly AI Reports via Resend</strong></p>
+  <img 
+    src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20184757.png"
+    width="350"
+  />
+</div>
+
+<!-- Portrait Feature 6 (no title) -->
+<p align="center" style="margin-bottom: 5px;">
+  <img 
+    src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20184819.png"
+    width="350"
+  />
 </p>
 
-<!-- Portrait Feature 6 -->
+<!-- Portrait Feature 7 (no title) -->
 <p align="center" style="margin-bottom: 25px;">
-  <img src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20184819.png" 
-       width="350" />
+  <img 
+    src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20184820.png"
+    width="350"
+  />
 </p>
 
-<!-- Portrait Feature 7 (centered properly) -->
-<p align="center" style="margin-bottom: 25px;">
-  <img src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20184820.png" 
-       width="350" />
-</p>
 
 ---
 
@@ -87,13 +110,28 @@ A full-stack, AI-enhanced personal finance app that helps users manage bank acco
 
 > These features were added on top of the original tutorial to practice real-world UI/UX enhancements and front-end refinement.
 
-<img src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20164022.png" style="margin-bottom: 20px;" />
+<!-- Image 1 -->
+<div style="margin-bottom: 20px;">
+  <p><strong>1. Theme Toggle</strong></p>
+  <img 
+    src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20164022.png"
+  />
+</div>
 
-<img src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20164054.png" style="margin-bottom: 20px;" />
+<!-- Image 2 (no title) -->
+<div style="margin-bottom: 20px;">
+  <img 
+    src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20164054.png"
+  />
+</div>
 
-<p align="center">
-  <img src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20170524.png" style="margin-top: 20px;" />
-</p>
+<!-- Image 3 -->
+<div align="center" style="margin-bottom: 20px; text-align: center;">
+  <p><strong>2. Responsive Design</strong></p>
+  <img 
+    src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20170524.png"
+  />
+</div>
 
 
 ---
