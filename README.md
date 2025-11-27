@@ -42,6 +42,42 @@ A full-stack, AI-enhanced personal finance app that helps users manage bank acco
 - 🛡️ **Rate Limiting & Security** – Powered by Arcjet
 - 📧 **Email Integration** – Notifications and reports via Resend
 
+<!-- Landscape Feature 1 -->
+<img src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20164110.png" 
+     style="margin-bottom: 25px;" />
+
+<!-- Landscape Feature 2 -->
+<img src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20164136.png" 
+     style="margin-bottom: 25px;" />
+
+<!-- Landscape Feature 3 -->
+<img src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20164154.png" 
+     style="margin-bottom: 25px;" />
+
+<!-- Portrait Feature 4 -->
+<p align="center" style="margin-bottom: 25px;">
+  <img src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20184709.png" 
+       width="350" />
+</p>
+
+<!-- Portrait Feature 5 -->
+<p align="center" style="margin-bottom: 25px;">
+  <img src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20184757.png" 
+       width="350" />
+</p>
+
+<!-- Portrait Feature 6 -->
+<p align="center" style="margin-bottom: 25px;">
+  <img src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20184819.png" 
+       width="350" />
+</p>
+
+<!-- Portrait Feature 7 (centered properly) -->
+<p align="center" style="margin-bottom: 25px;">
+  <img src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20184820.png" 
+       width="350" />
+</p>
+
 ---
 
 ## 🧩 Additional Enhancements
@@ -50,6 +86,15 @@ A full-stack, AI-enhanced personal finance app that helps users manage bank acco
 - 📱 **Responsive Design Fixes (WIP)** – Identified layout bugs (e.g. misaligned text) on small screens and plan to polish UI further  
 
 > These features were added on top of the original tutorial to practice real-world UI/UX enhancements and front-end refinement.
+
+<img src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20164022.png" style="margin-bottom: 20px;" />
+
+<img src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20164054.png" style="margin-bottom: 20px;" />
+
+<p align="center">
+  <img src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20170524.png" style="margin-top: 20px;" />
+</p>
+
 
 ---
 
