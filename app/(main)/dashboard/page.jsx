@@ -40,14 +40,12 @@ async function DashboardPage() {
 
         {/* Accounts Grid */}
         <div className='grid gap-4 md:grid-cols-2 lg:grid-cols-3' >
-          {accounts.length > 0 && accounts?.map((account) => {
+          {accounts?.length > 0 && accounts.map((account) => {
             return <AccountCard key={account.id} account={account} />
           })}
-
           <CreateAccountDrawer>
             <Card className="hover:shadow-md transition-shadow cursor-pointer border-dashed" >
-              <CardContent className='flex flex-cols gap-2 items-center justify-center text-muted-foreground h-full pt-5' >
-                <Plus className='h-10 w-10' />
+              <CardContent className='flex flex-col gap-2 items-center justify-center text-muted-foreground h-full pt-5' >                <Plus className='h-10 w-10' />
                 <p className='text-sm font-medium' >Add New Account</p>
               </CardContent>
             </Card>

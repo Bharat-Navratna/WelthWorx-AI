@@ -15,7 +15,7 @@ const Header = async () => {
     
     {/* Brand */}
     <Link href="/" className="flex items-center">
-      <span className="text-3xl font-bold leading-none select-none gradient-logo">
+      <span className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold leading-none select-none gradient-logo">
         WelthWorx AI
       </span>
     </Link>
