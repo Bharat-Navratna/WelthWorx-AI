@@ -20,7 +20,7 @@ export default async function AccountsPage(props) {
 // There was supposed to be a 'space-y-8' in the first div below but the 2 elements within it weren't aligning that's why had to take it off.
   return (
     <div className= 'space-y-8 px-5'>
-      <div className='flex gap-4 items-end justify-between' >
+      <div className='flex flex-wrap gap-4 items-end justify-between' >
         <div>
           <h1 className='text-5xl sm:text-6xl font-bold gradient-title capitalize' >
             {account.name}
