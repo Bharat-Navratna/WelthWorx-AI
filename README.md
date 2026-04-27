@@ -43,6 +43,65 @@
 - **Recurring transactions**: mark any transaction as recurring (daily, weekly, monthly, or yearly) and the platform processes it automatically in the background so your books stay current without lifting a finger.
 - **Automated monthly reports**: at the start of every month an AI-generated spending summary lands in your inbox, highlighting your top categories, biggest changes, and personalised saving tips.
 
+<!-- Landscape Feature 1 -->
+<div style="margin-bottom: 25px;">
+  <p><strong>1. Interactive Dashboard</strong></p>
+  <img 
+    src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20164110.png"
+  />
+</div>
+
+<!-- Landscape Feature 2 -->
+<div style="margin-bottom: 25px;">
+  <p><strong>2. Transaction Overview</strong></p>
+  <img 
+    src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20164136.png"
+  />
+</div>
+
+<!-- Landscape Feature 3 -->
+<div style="margin-bottom: 25px;">
+  <p><strong>3. AI Receipt Scanner</strong></p>
+  <img 
+    src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20164154.png"
+  />
+</div>
+
+<!-- Portrait Feature 4 -->
+<div align="center" style="margin-bottom: 25px; text-align: center;">
+  <p><strong>4. Budget Notifications via Resend</strong></p>
+  <img 
+    src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20184709.png"
+    width="350"
+  />
+</div>
+
+<!-- Portrait Feature 5 -->
+<div align="center" style="margin-bottom: 25px; text-align: center;">
+  <p><strong>5. Monthly AI Reports via Resend</strong></p>
+  <img 
+    src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20184757.png"
+    width="350"
+  />
+</div>
+
+<!-- Portrait Feature 6 (no title) -->
+<p align="center" style="margin-bottom: 5px;">
+  <img 
+    src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20184819.png"
+    width="350"
+  />
+</p>
+
+<!-- Portrait Feature 7 (no title) -->
+<p align="center" style="margin-bottom: 25px;">
+  <img 
+    src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20184820.png"
+    width="350"
+  />
+</p>
+
+
 ---
 
 ## Technical highlights
@@ -53,6 +112,30 @@
 - **Arcjet security layers**: every inbound request passes through Arcjet shield (injection, XSS, and CSRF protection) and bot detection before reaching application code; rate limiting is applied per Clerk user ID on the transaction creation endpoint.
 - **Clerk authentication with middleware-based route protection**: Clerk middleware guards the `/dashboard`, `/account`, and `/transaction` route groups at the edge, so unauthenticated traffic is redirected before any page code or database query runs.
 - **Type-safe full-stack with Prisma**: the Prisma schema is the single source of truth for both PostgreSQL migrations and TypeScript types, eliminating any shape mismatch between the database and the application layer.
+
+<!-- Image 1 -->
+<div style="margin-bottom: 20px;">
+  <p><strong>1. Theme Toggle</strong></p>
+  <img 
+    src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20164022.png"
+  />
+</div>
+
+<!-- Image 2 (no title) -->
+<div style="margin-bottom: 20px;">
+  <img 
+    src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20164054.png"
+  />
+</div>
+
+<!-- Image 3 -->
+<div align="center" style="margin-bottom: 20px; text-align: center;">
+  <p><strong>2. Responsive Design</strong></p>
+  <img 
+    src="https://github.com/Bharat-Navratna/WelthWorx-AI/blob/main/public/readme/Screenshot%202025-11-27%20170524.png"
+  />
+</div>
+
 
 ---
 
