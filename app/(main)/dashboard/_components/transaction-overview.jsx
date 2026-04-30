@@ -19,7 +19,6 @@ import {
     Pie,
     Cell,
     ResponsiveContainer,
-    Tooltip,
     Legend,
   } from "recharts";
 import { format } from 'date-fns';
@@ -80,7 +79,7 @@ const DashboardOverview = ({ accounts, transactions }) => {
     );
 
   return (
-    <div className='grid gap-4 grid-cols-1 md:grid-cols-2' >
+    <div className='grid gap-4 grid-cols-1 lg:grid-cols-2' >
       <Card>
         <CardHeader className='flex flex-row items-center justify-between space-y-0 pb-4'>
             <CardTitle className='text-base font-normal'>
@@ -159,10 +158,10 @@ const DashboardOverview = ({ accounts, transactions }) => {
                                 outerRadius={80} 
                                 fill='#8884d8'
                                 dataKey="value"
-                                label={({ name, value }) => `${name}: $${value.toFixed(2)}`}
+                                label={false}
                             >
                                 {
-                                pieChartData.map((entry, index) => (
+                                pieChartData.map((_, index) => (
                                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]}/>
                                 ))
                                 }

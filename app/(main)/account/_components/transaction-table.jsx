@@ -187,7 +187,7 @@ const TransactionTable = ({ transactions }) => {
           />
         </div>
 
-        <div className="flex gap-2" >
+        <div className="flex flex-wrap gap-2" >
           <Select value={typeFilter} onValueChange={setTypeFilter} >
             <SelectTrigger>
               <SelectValue placeholder="All Types" />
@@ -231,7 +231,7 @@ const TransactionTable = ({ transactions }) => {
 
 
       {/* Transactions */}
-      <div className="rounded-md border">
+      <div className="rounded-md border overflow-x-auto">
         <Table>
           <TableHeader>
             <TableRow>
